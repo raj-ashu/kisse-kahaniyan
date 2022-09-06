@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(32, 5, 5);
+
+}
+/* navigation bar css starts here */
+.navbar{
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    background-color: #111;
+    color: blanchedalmond;
+    display: flex;
+    z-index: 6;
+    margin-bottom: 70px;
+    /* margin-bottom: 70px; */
+}
+.nav_title{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.nav_head{
+    
+    font-size: 2rem;
+    /* font-size: 2rem; */
+    text-align: center;
+    margin: auto 10px;
+    padding: 25px;
+    /* padding: 25px; */
+
+}
+.icon{
+    margin: auto 20px;
+}
+.icon img{
+    margin: auto 5px;
+    width: 65px;
+    height: 30px;
+    /* width: 65px;
+    height: 30px; */
+}
+.navbar a{
+    text-decoration: none;
+    color: blanchedalmond;
+}
+.navbar ul li:hover{
+    cursor: pointer;
+}
+.navbar li:hover a{
+        color: #818181;
+}
+#closeNav{
+    display: none;
+    float: right;
+    font-size: 30px;
+}
+.navbar ul{
+    /* width: 50%; */
+    /* float: right; */
+    display: flex;
+    list-style: none;
+}
+.navbar ul li{
+    font-size: 1rem;
+    margin: auto 10px;
+    padding: 20px;
+    /* margin: auto 10px;
+    padding: 20px; */
+}
+.logo{
+    display: none;
+}
+/*css for container starts here */
+.container{
+    display: flex;
+    flex-direction: column;
+}
+/* css for cards starts here */
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: 50px auto;
+
+}
+/* css for pages starts here */
+.cards .pages{
+    background-color: rgb(22, 16, 16);
+    padding: 50px;
+    width: 250px;
+    margin: 10px;
+}
+/* css for header */
+.header{
+    color: blanchedalmond;
+    /* color: rgb(13, 13, 146); */
+    font-weight: bold;
+    font-size: 1.7rem;
+    padding: 10px 0;
+    text-align: center;
+}
+/* css for para */
+.para{
+    color: rgb(99, 98, 97);
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+/* css for all buttons */
+a{
+    text-decoration: none;
+    color: rgb(150, 137, 137);
+}
+.btn{
+    background-color: #0a0a76;
+    color: rgb(150, 137, 137);
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px ;
+    font-weight: bold;
+    font-size: 1.35rem;
+}
+/* css for about page */
+.context{
+    background-color:rgb(22, 16, 16);
+    padding: 60px;
+}
+.sub_heading{
+    color: rgb(113, 0, 130);
+    padding: 10px 0;
+    font-size: 1.4rem;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 850px) {
+    .logo{
+        display:block;
+        font-size: 30px;
+        margin: auto 20px;
+    }
+    .navbar{
+        display: flex;
+    }
+    .navbar .header{
+        padding: 25px;
+    }
+    .navbar ul{
+        flex-direction: column;
+        justify-content: start;
+        width: 0px;
+        height: 100%;
+        background-color: #111;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        transition: 0.5s;    
+        padding-top: 20px;
+    }
+    .nav_title{
+        width: 100%;
+
+    }
+    .navbar ul li{
+        margin: 10px 20px;
+        color: #818181;
+        padding: 10px 10px 10px 30px;
+        font-size: 20px;
+    }
+    .navbar ul li:hover{
+        color: white;
+        cursor: pointer;
+    }
+    #closeNav{
+        display: block;
+        text-align: right;
+    }
+    .cards .pages{
+        background-color: rgb(22, 16, 16);
+        padding: 50px;
+        width: 100%;
+        margin: 10px;
+    }
+
+}
+@media only screen and (max-width: 520px){
+    .nav_head{
+        font-size: 1.3rem;
+        padding: 25px 10px;
+        
+    }
+    .icon img{
+        margin: auto 5px;
+        width: 55px;
+        height: 20px;
+        /* width: 65px;
+        height: 30px; */
+    }
+    .navbar ul li{
+        font-size: 0.88rem;
+        padding: 15px;
+        /* margin: auto 10px;
+        padding: 20px; */
+    }
+    .logo{
+        font-size: 20px;
+    }
+    .container h2{
+        margin: 5px;
+        padding: 5px;
+        font-size: 1.3rem;
+    }
+    .cards{
+        width: 100%;
+        margin: 30px 0;
+    
+    }
+    .cards .pages{
+        padding: 20px;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YOUR Story</title>
+  <link rel="stylesheet" href="./index_style.css">
+
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="logo" onclick="openNav()">&#9776;</div>
+    <div class="nav_title">
+      <div class="icon"><img src="https://i.pinimg.com/originals/60/74/40/607440e61f5c28a0bf3acaaeaa155075.jpg" alt="">
+      </div>
+      <div class="nav_head">My Webpage</div>
+    </div>
+    <ul id="Nav">
+      <li onclick="closeNav()" id="closeNav">&times;</li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#init">Initiatives</a></li>
+
+      <li><a href="./blogs">Blogs</a></li>
+      <li><a href="./login.php">Login</a></li>
+      <li><a href="./signup.php">Signup</a></li>
+    </ul>
+    <div id="home"></div>
+  </div>
+  <div class="container">
+    <div class="cards">
+      <div class="hero_div">
+        <div class="pic"><img src="https://cdn.pixabay.com/photo/2015/11/19/21/10/knowledge-1052010__340.jpg"
+            alt="Not found"></div>
+        <div class="content">
+          <div class="header">Enter the heading</div>
+          <div class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero minima iure nisi velit
+            consequatur hic quam minus enim voluptatum eveniet! Labore fugiat ullam doloribus excepturi nisi nam illum
+            id impedit. Eum, modi eligendi saepe ipsam corrupti impedit est, perferendis dignissimos obcaecati eos
+            consequuntur id distinctio amet accusantium quibusdam sunt adipisci!</div>
+        </div>
+      </div>
+      <div id="about"></div>
+    </div>
+    <div class="cards">
+      <div class="context">
+        <div class="header">About Our Membership Plans</div>
+        <div class="sub_heading">One Month Membership</div>
+        <div class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos reprehenderit dolorum
+          recusandae, ipsum architecto eos quis harum debitis molestias voluptatibus aliquam, autem excepturi voluptatum
+          tenetur officiis pariatur eius eaque iste cupiditate quidem esse. Cumque enim quasi tempora ab consectetur
+          nostrum blanditiis! Provident, nam asperiores harum sapiente blanditiis maiores veritatis optio!</div>
+        <div class="sub_heading">Three Month Membership</div>
+        <div class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos reprehenderit dolorum
+          recusandae, ipsum architecto eos quis harum debitis molestias voluptatibus aliquam, autem excepturi voluptatum
+          tenetur officiis pariatur eius eaque iste cupiditate quidem esse. Cumque enim quasi tempora ab consectetur
+          nostrum blanditiis! Provident, nam asperiores harum sapiente blanditiis maiores veritatis optio!</div>
+      </div>
+      <div id="init"></div>
+    </div>
+    <div class="cards">
+      <div class="context">
+        <div class="header">Our Initiatives</div>
+        <div class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, cum obcaecati. Ipsa saepe
+          doloribus asperiores delectus est ullam sequi quae modi hic, impedit, eveniet dolorum voluptatem tempora
+          consequuntur voluptatibus autem. Atque nemo molestiae rem totam perferendis dolores et nesciunt harum ipsam
+          eligendi, culpa hic nam officia aperiam architecto explicabo aspernatur adipisci, corporis quia itaque
+          repellat? Iusto dolorum, impedit consectetur soluta officiis numquam commodi velit voluptates officia natus
+          dicta voluptatum nemo. Pariatur quos rerum temporibus quae fugiat cum sed voluptatum. Quasi in repellendus
+          labore possimus harum provident fugit quae illo distinctio! Excepturi voluptatum ducimus magnam sequi facilis
+          magni? Mollitia, minima similique?</div>
+        <div class="sub_heading">What We Provide You</div>
+        <ul>
+
+          <li>first facility Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque eveniet, nisi repudiandae,
+            alias ipsam molestiae commodi cupiditate sunt vero optio adipisci atque minima eius voluptates rem. Non modi
+            ratione voluptate!</li>
+
+
+          <li>first facility Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque eveniet, nisi repudiandae,
+            alias ipsam molestiae commodi cupiditate sunt vero optio adipisci atque minima eius voluptates rem. Non modi
+            ratione voluptate!</li>
+
+            
+            <li>first facility Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque eveniet, nisi repudiandae,
+            alias ipsam molestiae commodi cupiditate sunt vero optio adipisci atque minima eius voluptates rem. Non modi
+            ratione voluptate!</li>
+
+
+          <li>first facility Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque eveniet, nisi repudiandae,
+            alias ipsam molestiae commodi cupiditate sunt vero optio adipisci atque minima eius voluptates rem. Non modi
+            ratione voluptate!</li>
+        </ul>
+      </div>
+    </div>
+    <div class="box">
+      <div class="h_box">Your Feedback Please</div>
+      <form action="./feedback/feedback.php" method="POST">
+        <input class="par" type="text" name="name" placeholder="Enter your name">
+        <input class="par" type="email" name="email" placeholder="Enter your Email">
+        <input class="par" type="text" name="feedback" placeholder="Enter your Feedback">
+        <input class="par" id="sub" style="margin: 4px 0;" type="submit" name="submit">
+      </form>
+    </div>
+
+  </div>
+  <footer>
+    <hr>
+    <div class="para" style="text-align: center;">CopyRight@2020 | All Rights Reserved.</div>
+  </footer>
+
+  <script>
+    function openNav() {
+      document.getElementById("Nav").style.width = "250px";
+    }
+    function closeNav() {
+      document.getElementById("Nav").style.width = "0px";
+    }
+  </script>
+</body>
+
+</html>

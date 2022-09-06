@@ -1,0 +1,442 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(32, 5, 5);
+
+}
+/* navigation bar css starts here */
+.navbar{
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    background-color: #111;
+    color: blanchedalmond;
+    display: flex;
+    z-index: 6;
+    margin-bottom: 70px;
+    /* margin-bottom: 70px; */
+}
+.nav_title{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.nav_head{
+    
+    font-size: 2rem;
+    /* font-size: 2rem; */
+    text-align: center;
+    margin: auto 10px;
+    padding: 25px;
+    /* padding: 25px; */
+
+}
+.icon{
+    margin: auto 20px;
+}
+.icon img{
+    margin: auto 5px;
+    width: 65px;
+    height: 30px;
+    /* width: 65px;
+    height: 30px; */
+}
+.navbar a{
+    text-decoration: none;
+    color: blanchedalmond;
+}
+.navbar ul li:hover{
+    cursor: pointer;
+}
+.navbar li:hover a{
+        color: #818181;
+}
+#closeNav{
+    display: none;
+    float: right;
+    font-size: 30px;
+}
+.navbar ul{
+    /* width: 50%; */
+    /* float: right; */
+    display: flex;
+    list-style: none;
+}
+.navbar ul li{
+    font-size: 1rem;
+    margin: auto 10px;
+    padding: 20px;
+    /* margin: auto 10px;
+    padding: 20px; */
+}
+.logo{
+    display: none;
+}
+/*css for container starts here */
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.hero_div {
+    background-color: rgb(22, 16, 16);
+    padding: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.hero_div .pic {
+    width: 300px;
+    height: 250px;
+    margin: 5px 50px 5px 5px;
+    /* margin: 5px 100px 5px 5px; */
+}
+
+.hero_div .pic img {
+    width: 300px;
+    height: 250px;
+    border-radius: 50%;
+    /* padding: 20px; */
+}
+
+
+/* css for cards starts here */
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: 50px auto;
+    /* margin: 50px auto; */
+
+}
+/* css for about page */
+.context{
+    background-color:rgb(22, 16, 16);
+    padding: 40px;
+}
+/* css for header */
+.header{
+    color: rgb(13, 13, 146);
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 10px 0;
+    text-align: center;
+}
+.sub_heading{
+    color: rgb(113, 0, 130);
+    padding: 8px 0;
+    font-size: 1.5rem;
+}
+/* css for para */
+.para{
+    color: rgb(99, 98, 97);
+    padding: 15px 0;
+    font-size: 1rem;
+}
+/* css for all buttons */
+.btn{
+    background-color: #0a0a76;
+    color: rgb(150, 137, 137);
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px ;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.context ul{
+    list-style-type: square;
+}
+.context ul li{
+    color: rgb(99, 98, 97);
+    padding: 20px 0;
+    font-size: 1rem;
+}
+.context ul li i{
+    color: rgb(99, 98, 97);
+    padding: 20px 0;
+    font-size: 1rem;
+}
+
+.box {
+    position: fixed;
+    bottom: 4px;
+    right: 0px;
+    width: 250px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: burlywood;
+}
+.h_box{
+    font-size: 1.0rem;
+    color: rgb(195, 0, 255);
+    padding: 8px 5px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.par{
+    font-size: 0.8rem;
+    padding: 3px;
+    margin: 4px;
+    border: none;
+}
+#sub{
+    width: 40%;
+}
+#sub:hover{
+    cursor: pointer;
+    color: rgb(51, 48, 48);
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    .navbar {
+        margin-bottom: 50px;
+    }
+    .nav_head{
+        font-size: 1.5rem;
+    }
+    .navbar ul li{
+        font-size: 0.9rem;
+        margin: auto 0px;
+        padding: 20px 15px;
+    }
+    
+
+    .hero_div {
+        padding: 30px;
+    }
+    
+    .hero_div .pic {
+        width: 200px;
+        height: 150px;
+        margin: 5px 20px 5px 5px;
+        /* margin: 5px 100px 5px 5px; */
+    }
+    
+    .hero_div .pic img {
+        width: 200px;
+        height: 150px;
+        /* border-radius: 30px; */
+        /* padding: 20px; */
+    }
+
+    .context{
+        background-color:rgb(22, 16, 16);
+        padding: 40px;
+    }
+
+    .header{
+        font-size: 1.5rem;
+    }
+    /* css for para */
+    .para{
+        font-size: 0.865rem;
+    }
+    .sub_heading{
+        font-size: 1.0rem;
+    }
+    .context ul li{
+        font-size: 0.865rem;
+        padding: 10px;
+    }
+}
+@media only screen and (max-width: 734px) {
+    .navbar {
+        margin-bottom: 30px;
+    }
+    .nav_head{
+        font-size: 1.3rem;
+    }
+    .logo{
+        display:block;
+        font-size: 25px;
+        margin: auto 20px;
+    }
+    .navbar ul{
+        flex-direction: column;
+        justify-content: start;
+        width: 0px;
+        /* width: 0px; */
+        height: 100%;
+        background-color: #111;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        transition: 0.5s;    
+        padding-top: 20px;
+    }
+    /* .navbar{
+        display: flex;
+    } */
+    /* .navbar .header{
+        padding: 25px;
+    } */
+    .nav_title{
+        width: 100%;
+
+    }
+    .navbar ul li{
+        margin: 10px 20px;
+        color: #818181;
+        padding: 5px 10px 5px 30px;
+        font-size: 1rem;
+    }
+    #closeNav{
+        display: block;
+        text-align: right;
+    }
+    .hero_div {
+        padding: 20px;
+    }
+    
+    .hero_div .pic {
+        width: 130px;
+        height: 105px;
+        margin: 5px 15px 5px 5px;
+        /* margin: 5px 100px 5px 5px; */
+    }
+    
+    .hero_div .pic img {
+        width: 130px;
+        height: 105px;
+        /* border-radius: 30px; */
+        /* padding: 20px; */
+    }
+
+    .context{
+        background-color:rgb(22, 16, 16);
+        padding: 30px;
+    }
+
+    .header{
+        font-size: 1.2rem;
+    }
+    /* css for para */
+    .para{
+        font-size: 0.75rem;
+    }
+    .sub_heading{
+        font-size: 0.9rem;
+    }
+    .context ul li{
+        font-size: 0.75rem;
+        padding: 8px;
+    }
+
+}
+@media only screen and (max-width: 520px){
+    .cards{
+        margin: 30px 0;
+        width: 100%;
+    }
+    .icon img{
+        margin: auto 5px;
+        width: 50px;
+        height: 20px;
+        /* width: 65px;
+        height: 30px; */
+    }
+    .navbar {
+        margin-bottom: 17px;
+    }
+    .nav_head{
+        font-size: 1.15rem;
+    }
+    .logo{
+        font-size: 19px;
+        margin: auto 20px;
+    }
+    
+    /* .navbar{
+        display: flex;
+    } */
+    /* .navbar .header{
+        padding: 25px;
+    } */
+    .navbar ul li{
+        margin: 10px 20px;
+        color: #818181;
+        padding: 5px 10px 5px 30px;
+        font-size: 1rem;
+    }
+    #closeNav{
+        display: block;
+        text-align: right;
+    }
+    .hero_div {
+        padding: 20px 10px;
+    }
+    
+    .hero_div .pic {
+        width: 100px;
+        height: 80px;
+        margin: 5px 10px 5px 5px;
+        /* margin: 5px 100px 5px 5px; */
+    }
+    
+    .hero_div .pic img {
+        width: 100px;
+        height: 80px;
+        /* border-radius: 30px; */
+        /* padding: 20px; */
+    }
+    .context{
+        padding: 20px;
+    }
+    .header{
+        font-size: 1.1rem;
+    }
+    /* css for para */
+    .para{
+        font-size: 0.65rem;
+        padding: 10px;
+    }
+    .sub_heading{
+        font-size: 0.81rem;
+    }
+    .context ul li{
+        font-size: 0.65rem;
+    }
+    .box{
+        position: relative;
+        width: 100%;
+        margin: 30px 0;
+        border-radius: 0;
+        background-color:rgb(22, 16, 16);
+    }
+    .h_box{   
+        color: rgb(218, 190, 138);
+    }
+    form{
+        width: 100%;
+    }
+    .par{
+        width: 90%;
+        padding: 5px 10px;
+        margin: 5px 10px;
+        background-color: rgb(235, 175, 175);
+        border: 2px solid rgb(20, 20, 20);
+        border-radius: 5px;
+    }
+    
+}

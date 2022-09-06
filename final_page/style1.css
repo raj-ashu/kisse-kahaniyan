@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(32, 5, 5);
+
+}
+/* navigation bar css starts here */
+.navbar{
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    background-color: #111;
+    color: blanchedalmond;
+    display: flex;
+    z-index: 6;
+    margin-bottom: 70px;
+    /* margin-bottom: 70px; */
+}
+.nav_title{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.nav_head{
+    
+    font-size: 2rem;
+    /* font-size: 2rem; */
+    text-align: center;
+    margin: auto 10px;
+    padding: 25px;
+    /* padding: 25px; */
+
+}
+.icon{
+    margin: auto 20px;
+}
+.icon img{
+    margin: auto 5px;
+    width: 65px;
+    height: 30px;
+    /* width: 65px;
+    height: 30px; */
+}
+.navbar a{
+    text-decoration: none;
+    color: blanchedalmond;
+}
+.navbar ul li:hover{
+    cursor: pointer;
+}
+.navbar li:hover a{
+        color: #818181;
+}
+#closeNav{
+    display: none;
+    float: right;
+    font-size: 30px;
+}
+.navbar ul{
+    /* width: 50%; */
+    /* float: right; */
+    display: flex;
+    list-style: none;
+}
+.navbar ul li{
+    font-size: 1rem;
+    margin: auto 10px;
+    padding: 20px;
+    /* margin: auto 10px;
+    padding: 20px; */
+}
+.logo{
+    display: none;
+}
+/*css for container starts here */
+.container{
+    display: flex;
+    flex-direction: column;
+}
+/* css for cards starts here */
+.cards{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 50px auto;
+    background-color: rgb(242 184 184);
+    border: 2px solid gray;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+}
+/* css for header */
+.header{
+    color: rgb(13, 13, 146);
+    font-weight: bold;
+    font-size: 1.7rem;
+    padding: 20px 40px 10px 40px;
+    text-align: center;
+}
+/* css for para */
+.para{
+    color: rgb(99, 98, 97);
+    padding: 20px 40px 40px 40px;
+    font-size: 0.9rem;
+}
+.sub_heading{
+    color: rgb(113, 0, 130);
+    padding: 10px 0;
+    font-size: 1.4rem;
+}
+.cont{
+    position: relative;
+    width: 100%;
+}
+.date_time{
+    background-color: honeydew;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    position: relative;
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    .navbar {
+        margin-bottom: 50px;
+    }
+    .nav_head{
+        font-size: 1.5rem;
+    }
+    .navbar ul li{
+        font-size: 0.9rem;
+        margin: auto 0px;
+        padding: 20px 15px;
+    }
+    .header{
+        font-size: 1.5rem;
+    }
+    /* css for para */
+    .para{
+        font-size: 0.865rem;
+    }
+    .sub_heading{
+        font-size: 1.0rem;
+    }
+}
+@media only screen and (max-width: 734px) {
+    .navbar {
+        margin-bottom: 30px;
+    }
+    .nav_head{
+        font-size: 1.3rem;
+    }
+    .logo{
+        display:block;
+        font-size: 25px;
+        margin: auto 20px;
+    }
+    .navbar ul{
+        flex-direction: column;
+        justify-content: start;
+        width: 0px;
+        /* width: 0px; */
+        height: 100%;
+        background-color: #111;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        transition: 0.5s;    
+        padding-top: 20px;
+    }
+    /* .navbar{
+        display: flex;
+    } */
+    /* .navbar .header{
+        padding: 25px;
+    } */
+    .nav_title{
+        width: 100%;
+
+    }
+    .navbar ul li{
+        margin: 10px 20px;
+        color: #818181;
+        padding: 5px 10px 5px 30px;
+        font-size: 1rem;
+    }
+    #closeNav{
+        display: block;
+        text-align: right;
+    }
+    .header{
+        font-size: 1.2rem;
+    }
+    /* css for para */
+    .para{
+        font-size: 0.75rem;
+    }
+    .sub_heading{
+        font-size: 0.9rem;
+    }
+
+}
+@media only screen and (max-width: 520px){
+    
+    .icon img{
+        margin: auto 5px;
+        width: 50px;
+        height: 20px;
+        /* width: 65px;
+        height: 30px; */
+    }
+    .navbar {
+        margin-bottom: 17px;
+    }
+    .nav_head{
+        font-size: 1.15rem;
+    }
+    .logo{
+        font-size: 19px;
+        margin: auto 20px;
+    }
+    
+    /* .navbar{
+        display: flex;
+    } */
+    /* .navbar .header{
+        padding: 25px;
+    } */
+    .navbar ul li{
+        margin: 10px 20px;
+        color: #818181;
+        padding: 5px 10px 5px 30px;
+        font-size: 1rem;
+    }
+    #closeNav{
+        display: block;
+        text-align: right;
+    }
+    .header{
+        font-size: 1.1rem;
+    }
+    /* css for para */
+    .para{
+        font-size: 0.65rem;
+        padding: 10px;
+    }
+    .sub_heading{
+        font-size: 0.81rem;
+    }
+    
+    
+}
